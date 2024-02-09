@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-24T17:04:40 CEST" name="Default suite" finished-at="2023-08-24T17:04:41 CEST" duration-ms="1294">
+    <groups>
+    </groups>
+    <test started-at="2023-08-24T17:04:40 CEST" name="Default test" finished-at="2023-08-24T17:04:41 CEST" duration-ms="1294">
+      <class name="firstseleniumpackage.AppApiTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:firstseleniumpackage.AppApiTests@3349e9bb]" started-at="2023-08-24T17:04:40 CEST" name="setUp" finished-at="2023-08-24T17:04:40 CEST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLoginWithEmptyFields()[pri:0, instance:firstseleniumpackage.AppApiTests@3349e9bb]" started-at="2023-08-24T17:04:40 CEST" name="testInvalidLoginWithEmptyFields" finished-at="2023-08-24T17:04:41 CEST" duration-ms="484" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[No such host is known (account.myapp.com)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: No such host is known (account.myapp.com)
+at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1059)
+at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1668)
+at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1003)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at firstseleniumpackage.AppApiTests.testInvalidLoginWithEmptyFields(AppApiTests.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginWithEmptyFields -->
+        <test-method signature="testInvalidProfileUpdate()[pri:0, instance:firstseleniumpackage.AppApiTests@3349e9bb]" started-at="2023-08-24T17:04:41 CEST" name="testInvalidProfileUpdate" finished-at="2023-08-24T17:04:41 CEST" duration-ms="418" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[No such host is known (profile.myapp.com)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: No such host is known (profile.myapp.com)
+at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1059)
+at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1668)
+at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1003)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at firstseleniumpackage.AppApiTests.testInvalidProfileUpdate(AppApiTests.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidProfileUpdate -->
+        <test-method signature="testValidLogin()[pri:0, instance:firstseleniumpackage.AppApiTests@3349e9bb]" started-at="2023-08-24T17:04:41 CEST" name="testValidLogin" finished-at="2023-08-24T17:04:41 CEST" duration-ms="3" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[account.myapp.com]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: account.myapp.com
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at firstseleniumpackage.AppApiTests.testValidLogin(AppApiTests.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method signature="testValidProfileUpdate()[pri:0, instance:firstseleniumpackage.AppApiTests@3349e9bb]" started-at="2023-08-24T17:04:41 CEST" name="testValidProfileUpdate" finished-at="2023-08-24T17:04:41 CEST" duration-ms="5" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[profile.myapp.com]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: profile.myapp.com
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at firstseleniumpackage.AppApiTests.testValidProfileUpdate(AppApiTests.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidProfileUpdate -->
+      </class> <!-- firstseleniumpackage.AppApiTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
